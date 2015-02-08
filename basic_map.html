@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href='http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css' />
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.0.mn.js"></script>
+
+<style type="text/css">
+    #map { height: 600px; }
+</style>
+
+</head>
+<body>
+
+<div id="map"> </div>
+
+<script> 
+    var map = L.map('map').setView([40.435811, -79.987710], 13);
+    L.tileLayer('http://b.tile.stamen.com/watercolor/{z}/{x}/{y}.png').addTo(map);
+
+</script>
+
+
+</body>
+</html>
